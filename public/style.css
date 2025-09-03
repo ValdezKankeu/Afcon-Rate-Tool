@@ -3,103 +3,127 @@ body {
 
 
 }
-.title{
+.title{ text-align: center;
   
 
 
 
-
-
 }
-.intro-section{
-  background-color: greenyellow;
+
+
+
+/* === Global Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* === Title Section === */
+.title h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* === Headings === */
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* === Intro Section === */
+.intro-section {
+  background-color: green;
   color: white;
   padding: 20px;
   border-radius: 8px;
 }
-.flag-icon{
+
+/* === Flag Icon === */
+.flag-icon {
   width: 40px;
   height: auto;
   vertical-align: middle;
   margin-right: 6px;
   transition: transform 0.3s ease;
 }
-  .flag-icon:hover {
-    transition: transform 0.3s ease;
+
+.flag-icon:hover {
+  transform: scale(1.1);
 }
-.africa-map img{
-  margin-left:80%;
-  width:20%;
+
+/* === Africa Map === */
+.africa-map img {
+  margin-left: 80%;
+  width: 20%;
   height: auto;
-
-
-  
-  
+  transition: transform 0.3s ease;
 }
+
 .africa-map img:hover {
   transform: scale(1.03);
-  transition: transform 0.3s ease;}
-  .converter {
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #f4f4f4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+}
+
+/* === Currency Converter Box === */
+.converter {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .converter h2 {
-  text-align: center;
+  font-size: 1.8em;
   margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
 }
 
 .converter label {
   display: block;
-  margin-top: 10px;
-  font-weight: bold;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #34495e;
 }
 
 .converter select,
 .converter input {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border-radius: 5px;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
   border: 1px solid #ccc;
+  font-size: 1em;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .converter button {
   width: 100%;
-  padding: 10px;
-  margin-top: 15px;
-  background-color: #007bff;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #27ae60;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .converter button:hover {
-  background-color: #0056b3;
+  background-color: #219150;
 }
 
 #result {
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
-  font-size: 1.2em;
-  color: #333;
-}
-.title h1{
-  font-family: 'montserrat', sans-serif;
-  font-size: 2.5em;
-  font-weight: 700;
-  text-align: center;
-}
-
-h2{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
-  text-align: center;
+  font-size: 1.3em;
+  color: #2d3436;
 }
